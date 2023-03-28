@@ -39,8 +39,8 @@ public class Fifteen {
     //Question 7
     public static int getAverage(int[] numbers) {
         int sum = 0;
-        for (int number : numbers) {
-            sum += number;
+        for (int y = 0; y < numbers.length; y++) {
+            sum += numbers[y];
         }
         int average = (int) sum / numbers.length;
         return average;
@@ -59,6 +59,11 @@ public class Fifteen {
 
     //Question 10
     public static boolean contains(String[] names, String element) {
+        int p = 0;
+        for (p = 0; p < names.length; p++)
+        if (names[2].equals("Darius")){
+            return true;
+        }
         return false;
     }
 
@@ -85,14 +90,15 @@ public class Fifteen {
     //Question 15
 // Write a java method to count all the words in a string
 
-    //public static int WordsInAStringCounter(String str){
-    //return null;
-    //}
+    /* public static int WordsInAStringCounter(String str){
+    return null;
+    } */
 
     public static void main(String[] args) {
 
         String[] names ={"Jaimi", "Edwin", "Darius", "Alfonza", "Sebastian"};
         int[] numbers ={0, 1, 2, 3, 4, 5, 6, 7, 8};
+
         System.out.println(getLastIndex(names));
         System.out.println(getSecondToLastIndex(names));
         System.out.println(getFirstElement(names));
@@ -102,17 +108,11 @@ public class Fifteen {
         System.out.println(getAverage(numbers));
         //System.out.println(extractAllOddNumbers());
         //System.out.println(extractAllEvenNumbers());
+        System.out.println(contains(names, "Darius"));
 
 
 
 
 
     }
-
-
-
-
-
-
-
 }
