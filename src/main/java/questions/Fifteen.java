@@ -47,9 +47,14 @@ public class Fifteen {
     }
 
     //Question 8
-    public static String extractAllOddNumbers(int[] numbers) {
+    public static int extractAllOddNumbers(int[] numbers) {
 
-        return null;
+        int r = 0;
+        for (r = 0; r <= numbers.length; r++);
+        if (r % 2 != 0){
+            r++;
+        }
+        return r;
     }
 
     //Question 9
@@ -81,10 +86,10 @@ public class Fifteen {
     //Question 12
     public static void printOddNumbersInRange(int start, int end){
 
-        int r;
-        for (r = 1; r <= 9; r++);
-        if (r % 2 != 0){
-            System.out.println(r);
+        int j;
+        for (j = 1; j <= 9; j++);
+        if (j % 2 != 0){
+            System.out.println(j);
 
         }
 
@@ -103,7 +108,7 @@ public class Fifteen {
     //Question 15
 // Write a java method to count all the words in a string
 
-    /* public static int WordsInAStringCounter(String str){
+     /* public static int WordsInAStringCounter(String str){
     return null;
     } */
 
@@ -119,11 +124,14 @@ public class Fifteen {
         System.out.println(getSecondToLastElement(names));
         System.out.println(getSum(numbers));
         System.out.println(getAverage(numbers));
-        //System.out.println(extractAllOddNumbers());
+        System.out.println(extractAllOddNumbers(numbers));
         //System.out.println(extractAllEvenNumbers());
         System.out.println(contains(names, "Darius"));
         System.out.println(getIndexByElement(names, "Edwin"));
         printOddNumbersInRange(1,9);
+        //printGivenStringTimesNumberGiven();
+        //repeatFirstThreeLetters();
+        //WordsInAStringCounter();
 
 
 
