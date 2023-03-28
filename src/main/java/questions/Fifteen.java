@@ -68,12 +68,17 @@ public class Fifteen {
     }
 
     //Question 11
-    public static int getIndexByElement(String[] names, String element) {
-        return 0;
-    }
+    /* public static int getIndexByElement(String[] names, String element) {
+        int k = 0;
+        for (k = 0; k < names.length; k++) {
+            if (names[k] == (element)) {
+                return k;
+            }
+            return -1;
+        }
 
     //Question 12
-    public static void printOddNumbersInRange(int start, int end){
+    /* public static void printOddNumbersInRange(int start, int end){
 
     }
 
@@ -109,6 +114,7 @@ public class Fifteen {
         //System.out.println(extractAllOddNumbers());
         //System.out.println(extractAllEvenNumbers());
         System.out.println(contains(names, "Darius"));
+        //System.out.println(getIndexByElement(names, "Edwin"));
 
 
 
